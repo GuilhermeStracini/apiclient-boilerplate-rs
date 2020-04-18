@@ -1,1 +1,5 @@
 theme: jekyll-theme-minimal
+title: API Client boilerplate Rust
+description: A repository template form API clients written in Rust
+logo: https://raw.githubusercontent.com/guibranco/apiclient-boilerplate-rs/master/logo.png
+show_downloads: true
