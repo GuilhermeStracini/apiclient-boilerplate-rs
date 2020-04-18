@@ -1,37 +1,48 @@
-## Welcome to GitHub Pages
+# Package Name API
 
-You can use the [editor on GitHub](https://github.com/guibranco/apiclient-boilerplate-rust/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+The [Project API](https://apibr.com) client wrapper written in Rust
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+| Service      | Status |
+| -------      | :----: |
+| AppveyorCI   | [![Build status](https://ci.appveyor.com/api/projects/status/AppVeyorId?svg=true)](https://ci.appveyor.com/project/guibranco/apiclient-boilerplate-rust/branch/master) |
+| crates.io    | [![crates.io](https://img.shields.io/crates/v/package-name-rs.svg)](https://crates.io/crates/package-name-rs) |
 
-### Markdown
+Pure Rust bindings to the [Project API](https://apibr.com).
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Dependencies and support
 
-```markdown
-Syntax highlighted code block
+holiday-api-rust is intended to work on all tier 1 supported Rust systems:
 
-# Header 1
-## Header 2
-### Header 3
+- MacOSX
+- Linux
+- Windows
 
-- Bulleted
-- List
+## Minimum Compiler Version
 
-1. Numbered
-2. List
+Due to the use of certain features holiday-api-rust requires `rustc` version 1.18 or
+higher.
 
-**Bold** and _Italic_ and `Code` text
+## Getting Started
 
-[Link](url) and ![Image](src)
+Add the following to your `Cargo.toml`
+
+```toml
+[dependencies]
+package_name_rs = "0.0.1"
+serde_json = "1.0"
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+Then in your `lib.rs` or `main.rs` file add:
 
-### Jekyll Themes
+```rust
+extern crate package_name;
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/guibranco/apiclient-boilerplate-rust/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+let client = PackageNameAPIClient::new();
 
-### Support or Contact
+```
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+## License
+
+Licensed under
+
+- MIT license ([LICENSE](https://github.com/guibranco/apiclient-boilerplate-rust/blob/master/LICENSE) or [http://opensource.org/licenses/MIT](http://opensource.org/licenses/MIT))
