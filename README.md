@@ -19,7 +19,7 @@ Pure Rust bindings to the [Project API](https://apibr.com).
 
 ## Minimum Compiler Version
 
-Due to the use of certain features holiday-api-rust requires `rustc` version 1.18 or
+Due to the use of certain features package-name-rs requires `rustc` version 1.18 or
 higher.
 
 ## Getting Started
