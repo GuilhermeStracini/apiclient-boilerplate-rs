@@ -11,7 +11,7 @@ Pure Rust bindings to the [Project API](https://apibr.com).
 
 ## Dependencies and support
 
-holiday-api-rust is intended to work on all tier 1 supported Rust systems:
+**package-name-rs** is intended to work on all tier 1 supported Rust systems:
 
 - MacOSX
 - Linux
