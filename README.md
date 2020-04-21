@@ -1,6 +1,6 @@
 # Package Name API
 
-The [Project API](https://apibr.com) client wrapper written in Rust
+The [Project API](https://apibr.com) client wrapper written in Rust.
 
 | Service      | Status |
 | -------      | :----: |
@@ -33,7 +33,6 @@ serde_json = "1.0"
 ```
 
 Then in your `lib.rs` or `main.rs` file add:
-
 ```rust
 extern crate package_name;
 
