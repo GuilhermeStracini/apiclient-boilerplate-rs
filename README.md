@@ -2,6 +2,9 @@
 
 The [Project API](https://apibr.com) client wrapper written in Rust.
 
+[![Maintainability](https://api.codeclimate.com/v1/badges/0a3e1c6466d7452231ec/maintainability)](https://codeclimate.com/github/GuilhermeStracini/apiclient-boilerplate-rs/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/0a3e1c6466d7452231ec/test_coverage)](https://codeclimate.com/github/GuilhermeStracini/apiclient-boilerplate-rs/test_coverage)
+
 | Service      | Status |
 | -------      | :----: |
 | AppveyorCI   | [![Build status](https://ci.appveyor.com/api/projects/status/AppVeyorId?svg=true)](https://ci.appveyor.com/project/guibranco/apiclient-boilerplate-rust/branch/master) |
