@@ -2,12 +2,14 @@
 
 The [Project API](https://apibr.com) client wrapper written in Rust.
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/0a3e1c6466d7452231ec/maintainability)](https://codeclimate.com/github/GuilhermeStracini/apiclient-boilerplate-rs/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/0a3e1c6466d7452231ec/test_coverage)](https://codeclimate.com/github/GuilhermeStracini/apiclient-boilerplate-rs/test_coverage)
+[![wakatime](https://wakatime.com/badge/github/{username}/{repo}.svg)](https://wakatime.com/badge/github/{username}/{repo})
+[![Maintainability](https://api.codeclimate.com/v1/badges/{codeClimateId}/maintainability)](https://codeclimate.com/github/{username}/{repo}/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/{codeClimateId}/test_coverage)](https://codeclimate.com/github/{username}/{repo}/test_coverage)
+[![CodeFactor](https://www.codefactor.io/repository/github/{username}/{repo}/badge)](https://www.codefactor.io/repository/github/{username}/{repo})
 
 | Service      | Status |
 | -------      | :----: |
-| AppveyorCI   | [![Build status](https://ci.appveyor.com/api/projects/status/AppVeyorId?svg=true)](https://ci.appveyor.com/project/guibranco/apiclient-boilerplate-rust/branch/master) |
+| AppveyorCI   | [![Build status](https://ci.appveyor.com/api/projects/status/{appVeyorId}?svg=true)](https://ci.appveyor.com/project/{username}/{repo}/branch/main) |
 | crates.io    | [![crates.io](https://img.shields.io/crates/v/package-name-rs.svg)](https://crates.io/crates/package-name-rs) |
 
 Pure Rust bindings to the [Project API](https://apibr.com).
