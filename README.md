@@ -1,6 +1,6 @@
 # Package Name API
 
-The [Project API](https://apibr.com) client wrapper written in Rust.
+The [Project API](https://apibr.com) client wrapper is written in Rust.
 
 [![wakatime](https://wakatime.com/badge/github/{username}/{repo}.svg)](https://wakatime.com/badge/github/{username}/{repo})
 [![Maintainability](https://api.codeclimate.com/v1/badges/{codeClimateId}/maintainability)](https://codeclimate.com/github/{username}/{repo}/maintainability)
@@ -24,7 +24,7 @@ Pure Rust bindings to the [Project API](https://apibr.com).
 
 ## Minimum Compiler Version
 
-Due to the use of certain features package-name-rs requires `rustc` version 1.18 or
+Due to the use of certain features, package-name-rs requires `rustc` version 1.18 or
 higher.
 
 ## Getting Started
