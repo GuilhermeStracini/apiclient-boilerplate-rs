@@ -21,7 +21,7 @@ A boilerplate API client template for those that want to build a Rust API client
 
 
 
-# Package Name API
+## Package Name API
 
 The [Project API](https://apibr.com) client wrapper is written in Rust.
 
@@ -72,4 +72,4 @@ let client = PackageNameAPIClient::new();
 
 Licensed under
 
-- MIT license ([LICENSE](https://github.com/guibranco/apiclient-boilerplate-rs/blob/master/LICENSE) or [http://opensource.org/licenses/MIT](http://opensource.org/licenses/MIT))
+-  MIT license ([LICENSE](https://github.com/guibranco/apiclient-boilerplate-rs/blob/master/LICENSE) or [http://opensource.org/licenses/MIT](http://opensource.org/licenses/MIT))
