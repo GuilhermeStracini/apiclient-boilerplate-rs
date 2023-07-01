@@ -17,13 +17,7 @@ A boilerplate API client template for those that want to build a Rust API client
 
 <!-- remove lines until this line -->
 
-# {Project Name} SDK .NET
-
-
-
-## Package Name API
-
-The [Project API](https://apibr.com) client wrapper is written in Rust.
+# {Project Name} SDK Rust
 
 [![wakatime](https://wakatime.com/badge/github/{username}/{repo}.svg)](https://wakatime.com/badge/github/{username}/{repo})
 [![Maintainability](https://api.codeclimate.com/v1/badges/{codeClimateId}/maintainability)](https://codeclimate.com/github/{username}/{repo}/maintainability)
@@ -35,7 +29,7 @@ The [Project API](https://apibr.com) client wrapper is written in Rust.
 | AppveyorCI   | [![Build status](https://ci.appveyor.com/api/projects/status/{appVeyorId}?svg=true)](https://ci.appveyor.com/project/{username}/{repo}/branch/main) |
 | crates.io    | [![crates.io](https://img.shields.io/crates/v/package-name-rs.svg)](https://crates.io/crates/package-name-rs) |
 
-Pure Rust bindings to the [Project API](https://apibr.com).
+{{Project Description}}
 
 ## Dependencies and support
 
@@ -72,4 +66,4 @@ let client = PackageNameAPIClient::new();
 
 Licensed under
 
--  MIT license ([LICENSE](https://github.com/guibranco/apiclient-boilerplate-rs/blob/master/LICENSE) or [http://opensource.org/licenses/MIT](http://opensource.org/licenses/MIT))
+MIT license ([LICENSE](https://github.com/guibranco/apiclient-boilerplate-rs/blob/master/LICENSE) or [http://opensource.org/licenses/MIT](http://opensource.org/licenses/MIT))
