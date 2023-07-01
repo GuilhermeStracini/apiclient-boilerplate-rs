@@ -1,6 +1,23 @@
-# Package Name API
+# API Client boilerplate template
 
-The [Project API](https://apibr.com) client wrapper is written in Rust.
+A boilerplate API client template for those that want to build a Rust API clients wrappers
+
+<!-- Remove the following lines until the following comment section -->
+
+## Instructions on how to use this template
+
+> - Run the `initial-setup.bat` and follow the prompts
+>
+> OR
+>
+> -  Change the *appveyor.yml* with your **tokens** (use secure tokens) or use your preferred CI tool (Circle CI, GitHub Actions, Jenkins, Team City, Azure DevOps)
+> -  Fix in the *readme* the path of the badges and remove this section. (change all *{username}/{repo}* tokens with your own data).
+> -  Add to *readme* usage instructions of your client/SDK.
+> -  Update _config.yml with project details (github.io docs website)
+
+<!-- remove lines until this line -->
+
+# {Project Name} SDK Rust
 
 [![wakatime](https://wakatime.com/badge/github/{username}/{repo}.svg)](https://wakatime.com/badge/github/{username}/{repo})
 [![Maintainability](https://api.codeclimate.com/v1/badges/{codeClimateId}/maintainability)](https://codeclimate.com/github/{username}/{repo}/maintainability)
@@ -12,7 +29,7 @@ The [Project API](https://apibr.com) client wrapper is written in Rust.
 | AppveyorCI   | [![Build status](https://ci.appveyor.com/api/projects/status/{appVeyorId}?svg=true)](https://ci.appveyor.com/project/{username}/{repo}/branch/main) |
 | crates.io    | [![crates.io](https://img.shields.io/crates/v/package-name-rs.svg)](https://crates.io/crates/package-name-rs) |
 
-Pure Rust bindings to the [Project API](https://apibr.com).
+{{Project Description}}
 
 ## Dependencies and support
 
@@ -49,4 +66,4 @@ let client = PackageNameAPIClient::new();
 
 Licensed under
 
-- MIT license ([LICENSE](https://github.com/guibranco/apiclient-boilerplate-rust/blob/master/LICENSE) or [http://opensource.org/licenses/MIT](http://opensource.org/licenses/MIT))
+MIT license ([LICENSE](https://github.com/guibranco/apiclient-boilerplate-rs/blob/master/LICENSE) or [http://opensource.org/licenses/MIT](http://opensource.org/licenses/MIT))
