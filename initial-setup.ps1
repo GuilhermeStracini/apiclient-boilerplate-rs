@@ -4,7 +4,7 @@ $GitHubUsername = Read-Host -Prompt 'GitHub username'
 $GitHubRepo = Read-Host -Prompt 'GitHub repository'
 $AppVeyorId = Read-Host -Prompt 'AppVeyor project ID'
 
-(Get-Content README.md) | Select-Object -Skip 19 | Set-Content README.md
+(Get-Content README.md) | Select-Object -Skip 20 | Set-Content README.md
 
 (Get-Content README.md) | ForEach-Object { $_ -replace "{username}", $GitHubUsername } | Set-Content README.md
 (Get-Content README.md) | ForEach-Object { $_ -replace "{repo}", $GitHubRepo } | Set-Content README.md
