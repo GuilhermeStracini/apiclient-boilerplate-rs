@@ -1,6 +1,6 @@
 # API Client boilerplate template
 
-A boilerplate API client template for those that want to build a Rust API clients wrappers
+A boilerplate API client template for those who want to build Rust API client wrappers
 
 <!-- Remove the following lines until the following comment section -->
 
@@ -67,4 +67,4 @@ let client = PackageNameAPIClient::new();
 
 Licensed under
 
-MIT license ([LICENSE](https://github.com/guibranco/apiclient-boilerplate-rs/blob/master/LICENSE) or [http://opensource.org/licenses/MIT](http://opensource.org/licenses/MIT))
+MIT license ([LICENSE](https://github.com/guibranco/apiclient-boilerplate-rs/blob/main/LICENSE) or [http://opensource.org/licenses/MIT](http://opensource.org/licenses/MIT))
