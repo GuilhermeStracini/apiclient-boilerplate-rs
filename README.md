@@ -32,6 +32,8 @@ A boilerplate API client template for those who want to build Rust API client wr
 
 {{Project Description}}
 
+---
+
 ## Dependencies and support
 
 **package-name-rs** is intended to work on all tier 1 supported Rust systems:
@@ -40,10 +42,14 @@ A boilerplate API client template for those who want to build Rust API client wr
 - Linux
 - Windows
 
+---
+
 ## Minimum Compiler Version
 
 Due to the use of certain features, package-name-rs requires `rustc` version 1.18 or
 higher.
+
+---
 
 ## Getting Started
 
@@ -62,6 +68,8 @@ extern crate package_name;
 let client = PackageNameAPIClient::new();
 
 ```
+
+---
 
 ## License
 
