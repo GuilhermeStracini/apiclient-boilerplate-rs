@@ -6,6 +6,7 @@ A boilerplate API client template for those that want to build a Rust API client
 
 ## Instructions on how to use this template
 
+> **Note**
 > - Run the `initial-setup.bat` and follow the prompts
 >
 > OR
