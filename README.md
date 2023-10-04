@@ -6,7 +6,7 @@
 
 ## About
 
-This is a **template repository** that sets the basic code and infrastructure for a repository/solution in *Rust** to create an **API client wrapper** (sometimes known as **SDK**).
+This is a **template repository** that sets the basic code and infrastructure for a repository/solution in **Rust** to create an **API client wrapper** (sometimes known as **SDK**).
 
 ---
 
