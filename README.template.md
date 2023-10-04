@@ -27,7 +27,7 @@ A boilerplate API client template for those who want to build Rust API client wr
 
 | Service      | Status |
 | -------      | :----: |
-| AppveyorCI   | [![Build status](https://ci.appveyor.com/api/projects/status/{appVeyorId}?svg=true)](https://ci.appveyor.com/project/{username}/{repo}/branch/main) |
+| AppVeyor CI  | [![Build status](https://ci.appveyor.com/api/projects/status/{appVeyorId}?svg=true)](https://ci.appveyor.com/project/{username}/{repo}/branch/main) |
 | crates.io    | [![crates.io](https://img.shields.io/crates/v/package-name-rs.svg)](https://crates.io/crates/package-name-rs) |
 
 {{Project Description}}
@@ -75,4 +75,4 @@ let client = PackageNameAPIClient::new();
 
 Licensed under
 
-MIT license ([LICENSE](https://github.com/guibranco/apiclient-boilerplate-rs/blob/main/LICENSE) or [http://opensource.org/licenses/MIT](http://opensource.org/licenses/MIT))
+MIT license ([LICENSE](https://github.com/{{username}}/{{repository}}/blob/main/LICENSE) or [http://opensource.org/licenses/MIT](http://opensource.org/licenses/MIT))
