@@ -1,0 +1,15 @@
+[package]
+name = "{{repository}}_rust"
+version = "0.1.0"
+authors = ["{{authorName}} <{{authorEmail}}>"]
+edition = "2023"
+description = "{{description}}"
+repository = "https://github.com/{{username}}/{{repository}}.git"
+homepage = "https://github.com/g{{username}}/{{repository}}"
+keywords = ["rest", "client", "sdk", "{{keyword}}"]
+categories = ["network-programming", "web-programming::http-client"]
+readme = "README.md"
+license = "MIT"
+
+[badges]
+appveyor = { repository = "{{username}}/{{repository}}", branch = "main", service = "github" }
