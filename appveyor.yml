@@ -23,3 +23,13 @@ build: false
 
 test_script:
   - cargo build
+
+deploy:
+
+- provider: GitHub
+  on:
+   branch: main
+  tag: v$(appveyor_build_version)
+  description: Release v$(appveyor_build_version)
+  auth_token: $(GITHUB_TOKEN)
+  force_update: true
