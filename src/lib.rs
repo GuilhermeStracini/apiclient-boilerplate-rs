@@ -3,7 +3,7 @@ use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Serialize, Deserialize)]
 struct Post {
-    userId: u32,
+    user_id: u32,
     id: u32,
     title: String,
     body: String,
