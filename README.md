@@ -8,32 +8,38 @@
 
 This is a **template repository** that sets the basic code and infrastructure for a repository/solution in **Rust** to create an **API client wrapper** (sometimes known as **SDK**).
 
+> [!Note]
+>
+> A [appveyor.yml](appveyor.yml) file is included for [AppVeyor](https://www.appveyor.com/) CI pipeline.
+> AppVeyor is free for open-source projects.
+> For closed-source projects, consider a paid subscription or other CI tools (GitHub Actions, CircleCI, TeamCity).
+ 
 ---
 
 ## Instructions
 
 > [!Warning]
 >
-> The automated process listed below only works in a **Windows** environment. A **Linux/MAC** setup is on the way but currently is not supported, so it should be done manually
+> The automated process listed below now supports **Windows** and **Linux/MAC** environments.
 
 ### Automated process
 
-- Click on the green button **USE THIS TEMPLATE**
-- Give a name to your new project/repository
-- Clone your newly created repository to your machine
+- Click on the green button **USE THIS TEMPLATE**.
+- Give a name to your new project/repository.
+- Clone your newly created repository to your machine.
 - Execute/run the file `initial-setup.bat` or `initial-setup.ps1` and follow the instructions on the prompt/terminal. 
 
 ### Manual process
 
-- Click on the green button **USE THIS TEMPLATE**
-- Give a name to your new project/repository
-- Clone your newly created repository to your machine
-- Delete this file (`README.md`) and rename `README.template.md` to `README.md`
-- Change the `appveyor.yml` with your **tokens** (use secure tokens) or use your preferred CI tool (Circle CI, GitHub Actions, Jenkins, Team City, Azure DevOps)
-- Change the package name in the Cargo.toml`.
+- Click on the green button **USE THIS TEMPLATE**.
+- Give a name to your new project/repository.
+- Clone your newly created repository to your machine.
+- Delete this file (`README.md`) and rename `README.template.md` to `README.md`.
+- Change the `appveyor.yml` with your **tokens** (use secure tokens) or use your preferred CI tool (Circle CI, GitHub Actions, Jenkins, Team City, Azure DevOps).
+- Change the package name in the `Cargo.toml`.
 - Fix in the `README.md` the path of the badges. (change all *{username}/{repo}* tokens with your own data).
 - Add to `README.md` usage instructions of your client/SDK.
-- Update `_config.yml` with project details (github.io docs website)
+- Update `_config.yml` with project details (github.io docs website).
 
 --- 
 
