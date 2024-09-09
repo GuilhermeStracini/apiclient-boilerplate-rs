@@ -7,6 +7,9 @@ $AppVeyorId = Read-Host -Prompt 'AppVeyor project ID'
 Remove-Item README.md
 Rename-Item -Path ".\README.template.md" -NewName ".\README.md"
 
+Remove-Item Cargo.toml
+Rename-Item -Path ".\Cargo.toml.template" -NewName ".\Cargo.toml"
+
 (Get-Content README.md) | ForEach-Object { $_ -replace "{username}", $GitHubUsername } | Set-Content README.md
 (Get-Content README.md) | ForEach-Object { $_ -replace "{repo}", $GitHubRepo } | Set-Content README.md
 (Get-Content README.md) | ForEach-Object { $_ -replace "{appVeyorId}", $AppVeyorId } | Set-Content README.md
