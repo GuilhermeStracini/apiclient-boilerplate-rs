@@ -1,12 +1,12 @@
 #!/bin/bash
 
 # Prompt the user for input
-read -p 'Project name (readable version): ' ProjectName
-read -p 'Brief resume of this project: ' ProjectDescription
-read -p 'GitHub username: ' GitHubUsername
-read -p 'GitHub repository: ' GitHubRepo
-read -p 'AppVeyor project ID (badge): ' AppVeyorId
-read -p 'API documentation URL: ' DocumentationWebsite
+read -p -r 'Project name (readable version): ' ProjectName
+read -p -r 'Brief resume of this project: ' ProjectDescription
+read -p -r 'GitHub username: ' GitHubUsername
+read -p -r 'GitHub repository: ' GitHubRepo
+read -p -r 'AppVeyor project ID (badge): ' AppVeyorId
+read -p -r 'API documentation URL: ' DocumentationWebsite
 
 # Remove and rename files
 rm README.md
