@@ -1,6 +1,6 @@
-extern crate apiclient_rust;
+extern crate apiclient_boilerplate_rust;
 
-use apiclient_rust::client::ApiClient;
+use apiclient_boilerplate_rust::client::ApiClient;
 
 #[tokio::main]
 async fn main() -> Result<(), reqwest::Error> {
@@ -9,10 +9,10 @@ async fn main() -> Result<(), reqwest::Error> {
 
      match api_client.get_post(1).await {
         Ok(post) => {
-            println!("Post: {:?}", post);
+            println!("Post: {post:?}");
         }
         Err(err) => {
-            eprintln!("Error: {}", err);
+            eprintln!("Error: {err}");
         }
     }
 
