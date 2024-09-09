@@ -1,12 +1,13 @@
 extern crate apiclient_rust;
 
-use apiclient_rust::ApiClient;
+use apiclient_rust::client::ApiClient;
 
 #[tokio::main]
 async fn main() -> Result<(), reqwest::Error> {
-    let api_client = ApiClient::new("https://jsonplaceholder.typicode.com");
+    let base_url = "https://jsonplaceholder.typicode.com";
+    let api_client = ApiClient::new(base_url);
 
-    match api_client.get_post(1).await {
+     match api_client.get_post(1).await {
         Ok(post) => {
             println!("Post: {:?}", post);
         }
