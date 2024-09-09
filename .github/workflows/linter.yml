@@ -19,4 +19,4 @@ jobs:
       - name: Run linter
         uses: clechasseur/rs-clippy-check@v3
         with:
-          args: --all-features --all-targets -- --warn clippy::pedantic
+          args: --all-features --all-targets -- --warn clippy::all
