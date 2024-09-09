@@ -1,13 +1,34 @@
 #!/bin/bash
 
-# This script is intended to automate the setup process for Linux and Mac environments.
-# Please customize the commands below based on your specific setup requirements.
+# Prompt the user for input
+read -p 'Project name (readable version): ' ProjectName
+read -p 'Brief resume of this project: ' ProjectDescription
+read -p 'GitHub username: ' GitHubUsername
+read -p 'GitHub repository: ' GitHubRepo
+read -p 'AppVeyor project ID (badge): ' AppVeyorId
+read -p 'API documentation URL: ' DocumentationWebsite
 
-echo "Starting initial setup..."
+# Remove and rename files
+rm README.md
+mv "README.template.md" "README.md"
 
-# Example: Install dependencies
-# sudo apt-get update && sudo apt-get install -y <dependency>
+# Replace placeholders in README.md
+sed -i "s/{username}/$GitHubUsername/g" README.md
+sed -i "s/{repo}/$GitHubRepo/g" README.md
+sed -i "s/{appVeyorId}/$AppVeyorId/g" README.md
+sed -i "s/{Project Name}/$ProjectName/g" README.md
+sed -i "s/{Project Description}/$ProjectDescription/g" README.md
+sed -i "s/https:\/\/project.name.com\//$DocumentationWebsite/" README.md
 
-echo "Setup complete."
+# Replace placeholders in .wakatime-project
+sed -i "s/API Client Boilerplate .NET/$ProjectName SDK .NET/" .wakatime-project
 
-exit 0
+# Replace placeholders in _config.yml
+sed -i "s/API Client Boilerplate/$ProjectName/" _config.yml
+sed -i "s/A template repository for .NET API clients projects./$ProjectDescription/" _config.yml
+sed -i "s/GuilhermeStracini\/apiclient-boilerplate-dotnet/$GitHubUsername\/$GitHubRepo/" _config.yml
+
+# Remove initial-setup files
+rm initial-setup.bat
+rm initial-setup.ps1
+rm initial-setup.sh
