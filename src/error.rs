@@ -11,8 +11,8 @@ pub enum ApiError {
 impl fmt::Display for ApiError {
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
         match *self {
-            ApiError::Http(ref err) => write!(f, "HTTP error: {}", err),
-            ApiError::Serialization(ref err) => write!(f, "Serialization error: {}", err),
+            ApiError::Http(ref err) => write!(f, "HTTP error: {err}"),
+            ApiError::Serialization(ref err) => write!(f, "Serialization error: {err}"),
             ApiError::Unknown => write!(f, "Unknown error occurred"),
         }
     }
