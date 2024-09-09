@@ -5,8 +5,7 @@ use apiclient_boilerplate_rust::client::ApiClient;
 
 #[tokio::test]
 async fn integration_test_apiclient_boilerplate_rust() {
-    // Arrange
-    
+    // Arrange       
     let mock_server = MockServer::start().await;
     let mock = Mock::given(method("GET"))
         .and(path("/posts/1"))
