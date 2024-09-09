@@ -1,6 +1,6 @@
-extern crate apiclient_rust;
+extern crate apiclient_boilerplate_rust;
 
-use apiclient_rust::client::ApiClient;
+use apiclient_boilerplate_rust::client::ApiClient;
 
 #[tokio::main]
 async fn main() -> Result<(), reqwest::Error> {
