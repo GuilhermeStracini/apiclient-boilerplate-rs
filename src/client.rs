@@ -1,6 +1,4 @@
 use reqwest::Client;
-use serde::{Deserialize, Serialize};
-use std::collections::HashMap;
 use crate::error::ApiError;
 use crate::models::Post;
 
