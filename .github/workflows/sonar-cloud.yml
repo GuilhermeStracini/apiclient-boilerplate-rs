@@ -30,7 +30,7 @@ jobs:
       - name: Install cargo-sonar and run Clippy
         run: |
             cargo install cargo-sonar
-            cargo clippy --all-features --all-targets --message-format=json -- --warn clippy::pedantic > clippy.json
+            cargo clippy --all-features --all-targets --message-format=json -- --warn clippy::all > clippy.json
             cargo sonar --clippy
             cargo audit --json > audit.json
             cargo sonar --audit
