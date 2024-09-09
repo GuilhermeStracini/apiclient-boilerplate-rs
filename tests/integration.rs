@@ -19,7 +19,7 @@ async fn integration_test_apiclient_boilerplate_rust() {
         .await;
 
     let base_url = mock_server.uri();
-    let api_client = ApiClient::new(base_url);
+    let api_client = ApiClient::new(&base_url);
 
     match api_client.get_post(1).await {
         Ok(post) => {
