@@ -5,7 +5,7 @@ authors = ["{{authorName}} <{{authorEmail}}>"]
 edition = "2021"
 description = "{{description}}"
 repository = "https://github.com/{{username}}/{{repository}}.git"
-homepage = "https://github.com/g{{username}}/{{repository}}"
+homepage = "https://github.com/{{username}}/{{repository}}"
 keywords = ["rest", "client", "sdk", "{{keyword}}"]
 categories = ["network-programming", "web-programming::http-client"]
 readme = "README.md"
@@ -23,3 +23,6 @@ serde_json = "1.0"
 [dev-dependencies]
 wiremock = "0.5.2"
 tokio = { version = "1", features = ["rt", "macros"] }
+
+[lib]
+crate-type = ["lib"]
