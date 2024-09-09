@@ -2,6 +2,7 @@
 
 # Prompt the user for input
 read -p -r 'Project name (readable version): ' ProjectName
+read -p -r 'Project keyword (Cargo.toml): ' ProjectKeyword
 read -p -r 'Brief resume of this project: ' ProjectDescription
 read -p -r 'GitHub username: ' GitHubUsername
 read -p -r 'GitHub repository: ' GitHubRepo
@@ -41,7 +42,7 @@ sed -i "s/{username}/$GitHubUsername/g" Cargo.toml
 sed -i "s/{repository}/$GitHubRepo/g" Cargo.toml
 sed -i "s/{authorName}/$AuthorName/g" Cargo.toml
 sed -i "s/{authoremail}/$AuthorEmail/g" Cargo.toml
-
+sed -i "s/{keyword}/$ProjectKeyword/g" Cargo.toml
 
 # Replace placeholders in sonar-project.properties
 sed -i "s/{username}/$GitHubUsername/g" sonar-project.properties
