@@ -12,6 +12,9 @@ read -p -r 'API documentation URL: ' DocumentationWebsite
 rm README.md
 mv "README.template.md" "README.md"
 
+rm Cargo.toml
+mv "Cargo.toml.template" "Cargo.toml"
+
 # Replace placeholders in README.md
 sed -i "s/{username}/$GitHubUsername/g" README.md
 sed -i "s/{repo}/$GitHubRepo/g" README.md
