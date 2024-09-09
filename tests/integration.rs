@@ -1,3 +1,4 @@
+use serde_json::json;
 use wiremock::{Mock, MockServer, ResponseTemplate};
 use wiremock::matchers::{method, path};
 use claim::assert_ok;
