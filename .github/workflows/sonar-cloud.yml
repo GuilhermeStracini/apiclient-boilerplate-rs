@@ -30,9 +30,15 @@ jobs:
       - name: Install cargo-sonar and run Clippy
         run: |
             cargo install cargo-sonar
-            cargo clippy --message-format json > my-clippy-report.json
-            cargo sonar --issues clippy --clippy-path my-clippy-report.json
-            
+            cargo clippy --all-features --all-targets --message-format=json -- --warn clippy::pedantic > clippy.json
+            cargo sonar --clippy
+            cargo audit --json > audit.json
+            cargo sonar --audit
+            cargo deny --format json check 2> deny.json
+            cargo sonar --deny
+            cargo outdated --depth 1 --format json --workspace > outdated.json
+            cargo sonar --outdated
+
       - name: Build with coverage
         run: |
           RUSTFLAGS="-C instrument-coverage" cargo build
