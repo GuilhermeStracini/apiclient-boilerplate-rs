@@ -15,6 +15,9 @@ mv "README.template.md" "README.md"
 rm Cargo.toml
 mv "Cargo.toml.template" "Cargo.toml"
 
+rm sonar-project.properties
+mv "sonar-project.properties.template" "sonar-project.properties"
+
 # Replace placeholders in README.md
 sed -i "s/{username}/$GitHubUsername/g" README.md
 sed -i "s/{repo}/$GitHubRepo/g" README.md
@@ -30,6 +33,10 @@ sed -i "s/API Client Boilerplate .NET/$ProjectName SDK .NET/" .wakatime-project
 sed -i "s/API Client Boilerplate/$ProjectName/" _config.yml
 sed -i "s/A template repository for .NET API clients projects./$ProjectDescription/" _config.yml
 sed -i "s/GuilhermeStracini\/apiclient-boilerplate-dotnet/$GitHubUsername\/$GitHubRepo/" _config.yml
+
+# Replace placeholders in sonar-project.properties
+sed -i "s/{username}/$GitHubUsername/g" sonar-project.properties
+sed -i "s/{repository}/$GitHubRepo/g" sonar-project.properties
 
 # Remove initial-setup files
 rm initial-setup.bat
