@@ -7,6 +7,8 @@ read -p -r 'GitHub username: ' GitHubUsername
 read -p -r 'GitHub repository: ' GitHubRepo
 read -p -r 'AppVeyor project ID (badge): ' AppVeyorId
 read -p -r 'API documentation URL: ' DocumentationWebsite
+read -p -r 'Author name: ' AuthorName
+read -p -r 'Author e-mail: ' AuthorEmail
 
 # Remove and rename files
 rm README.md
@@ -33,6 +35,13 @@ sed -i "s/API Client Boilerplate .NET/$ProjectName SDK .NET/" .wakatime-project
 sed -i "s/API Client Boilerplate/$ProjectName/" _config.yml
 sed -i "s/A template repository for .NET API clients projects./$ProjectDescription/" _config.yml
 sed -i "s/GuilhermeStracini\/apiclient-boilerplate-dotnet/$GitHubUsername\/$GitHubRepo/" _config.yml
+
+# Replace placeholders in Cargo.toml
+sed -i "s/{username}/$GitHubUsername/g" Cargo.toml
+sed -i "s/{repository}/$GitHubRepo/g" Cargo.toml
+sed -i "s/{authorName}/$AuthorName/g" Cargo.toml
+sed -i "s/{authoremail}/$AuthorEmail/g" Cargo.toml
+
 
 # Replace placeholders in sonar-project.properties
 sed -i "s/{username}/$GitHubUsername/g" sonar-project.properties
