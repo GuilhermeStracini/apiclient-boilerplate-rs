@@ -1,18 +1,18 @@
 [package]
-name = "{{repository}}_rust"
+name = "{repository}_rust"
 version = "0.1.0"
-authors = ["{{authorName}} <{{authorEmail}}>"]
+authors = ["{authorName} <{authorEmail}>"]
 edition = "2021"
-description = "{{description}}"
-repository = "https://github.com/{{username}}/{{repository}}.git"
-homepage = "https://github.com/{{username}}/{{repository}}"
-keywords = ["rest", "client", "sdk", "{{keyword}}"]
+description = "{description}"
+repository = "https://github.com/{username}/{repository}.git"
+homepage = "https://github.com/{username}/{repository}"
+keywords = ["rest", "client", "sdk", "{keyword}"]
 categories = ["network-programming", "web-programming::http-client"]
 readme = "README.md"
 license = "MIT"
 
 [badges]
-appveyor = { repository = "{{username}}/{{repository}}", branch = "main", service = "github" }
+appveyor = { repository = "{username}/{repository}", branch = "main", service = "github" }
 
 [dependencies]
 reqwest = { version = "0.11", features = ["json"] }
