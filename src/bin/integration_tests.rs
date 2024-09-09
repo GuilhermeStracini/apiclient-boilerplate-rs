@@ -1,10 +1,10 @@
 use reqwest;
 use tokio::time::Duration;
 use wiremock::{Mock, MockServer, ResponseTemplate};
-use apiclient_rust::client::ApiClient;
+use apiclient_boilerplate_rust::client::ApiClient;
 
 #[tokio::test]
-async fn integration_test_api_client() {
+async fn integration_test_apiclient_boilerplate_rust() {
     let mock_server = MockServer::start().await;
     let mock = Mock::given(wiremock::matchers::method("GET"))
         .and(wiremock::matchers::path("/posts/1"))
