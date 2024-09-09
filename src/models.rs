@@ -4,5 +4,6 @@ use serde::{Deserialize, Serialize};
 pub struct Post {
     pub title: String,
     pub body: String,
-    pub userId: u32,
+    #[serde(rename = "userId")]
+    pub user_id: u32,
 }
